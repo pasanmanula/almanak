@@ -11,13 +11,13 @@
  * Note : All these are fully connected nodes. (And no training portion defines here)
  */
 
-class SimplestFCNetwork : public torch::nn::Module {
+class SimplestFCNetworkImpl : public torch::nn::Module {
 public:
   /*
   * Construct the neural network architecture.
   * 
   */
-  explicit SimplestFCNetwork(int64_t input, int64_t output);  
+  explicit SimplestFCNetworkImpl(int64_t input, int64_t output);  
   /*
   * Defines the forward computation
   * Output_matrix = (input_matrix x W(Transpose) + linear_biases) + another_bias_
@@ -35,3 +35,5 @@ private:
 };
 
 #endif  // ALMANAK_SIMPLEST_FC_LAYER_HPP_
+
+TORCH_MODULE(SimplestFCNetwork);
