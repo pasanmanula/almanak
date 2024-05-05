@@ -1,0 +1,4 @@
+# Ignore the pytorch_lib directory and all of its contents
+pytorch_libs/
+.vscode/
+build/
