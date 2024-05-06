@@ -15,7 +15,7 @@ public:
   */
   explicit DCGANDiscriminatorImpl();  
   /*
-  * Defines the forward computation of the generator network.
+  * Defines the forward computation of the discriminator network.
   * 
   */
   torch::Tensor forward(torch::Tensor input);  
