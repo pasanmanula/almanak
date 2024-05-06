@@ -8,7 +8,7 @@ SimplestFCNetworkImpl::SimplestFCNetworkImpl(int64_t input, int64_t output)
 
 torch::Tensor SimplestFCNetworkImpl::forward(torch::Tensor input)
 {
-  return first_hidden_layer_(input) + another_bias_;
+  return first_hidden_layer_->forward(input) + another_bias_;
 }
 
 torch::OrderedDict<std::string, torch::Tensor> SimplestFCNetworkImpl::show_named_parameters() const
