@@ -4,6 +4,8 @@
  */
 #include <iostream>
 #include "simplest_fc_layer.hpp"
+#include "dcgan_generator.hpp"
+#include "dcgan_discriminator.hpp"
 
 void execute_simple_fc_example()
 {
@@ -19,9 +21,14 @@ void execute_simple_fc_example()
   }
 }
 
+void train_dcgan_network()
+{
+
+}
+
 int main()
 {
   std::cout << "Hello I'm Almanak" << std::endl;
-  execute_simple_fc_example();
+
   return 0;
 }
